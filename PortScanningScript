@@ -1,27 +1,20 @@
 # Python Port Scanning Script
 
-# external command to pipe results from CLT to text file
-os.system("ipconfig > netinfo.txt")
-
-#read, open, and close text file to program
-
-netinfo = open('netinfo.txt','r')
-contents = netinfo.readlines()
-netinfo.close()
-#pick out router IP address && subnet mask from netinfo.txt
+# cmdline is a function to run External Commands from Python Script
+from subprocess import PIPE, Popen
 
 
-#print out information on 
+def cmdline(command):
+    process = Popen(
+        args=command,
+        stdout=PIPE,
+        shell=True
+    )
+    return process.communicate()[0]
 
+print "Your IP Address: "
+print cmdline("ipconfig getifaddr en0")
 
-#nmap commands 
+print "Your router IP Address: "
+print cmdline("ipconfig getifaddr en1")
 
-def()
-# EC to run nmap to scan a single target
-os.system("nmap "+target)
-
-# EC to run nmap to scan a .txt of IP addresses
-os.system("nmap -iL "+port)
-
-# EC to detect operating system
-os.system("nmap -O "+target)
