@@ -1,0 +1,27 @@
+# Python Port Scanning Script
+
+# external command to pipe results from CLT to text file
+os.system("ipconfig > netinfo.txt")
+
+#read, open, and close text file to program
+
+netinfo = open('netinfo.txt','r')
+contents = netinfo.readlines()
+netinfo.close()
+#pick out router IP address && subnet mask from netinfo.txt
+
+
+#print out information on 
+
+
+#nmap commands 
+
+def()
+# EC to run nmap to scan a single target
+os.system("nmap "+target)
+
+# EC to run nmap to scan a .txt of IP addresses
+os.system("nmap -iL "+port)
+
+# EC to detect operating system
+os.system("nmap -O "+target)
