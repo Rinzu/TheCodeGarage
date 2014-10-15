@@ -13,3 +13,6 @@ Display Manager - LightDM
 Window Manager - FluxBox
 Login Manager - SLiM
 Greeter - lightdm-gtk3-greeter
+
+We will need to install nmap from their website : http://nmap.org/
+It is very easy to do and vital for the success of our project.
