@@ -1,0 +1,15 @@
+Arch Linux Install
+~~~~~
+Downloaded .iso from their website, created new virtual image in VMWare
+
+Create 2 partitions, one for storage and one for swap
+	fdisk
+
+Needed to establish network connection (wireless)
+	Needed VMWare to be in NAT mode
+
+Boot loader - Syslinux
+Display Manager - LightDM
+Window Manager - FluxBox
+Login Manager - SLiM
+Greeter - lightdm-gtk3-greeter
