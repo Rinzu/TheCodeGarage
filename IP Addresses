@@ -1,0 +1,21 @@
+
+# cmdline is a function to run External Commands from Python Script
+from subprocess import PIPE, Popen
+
+
+def cmdline(command):
+    process = Popen(
+        args=command,
+        stdout=PIPE,
+        shell=True
+    )
+    return process.communicate()[0]
+
+print ("Here are some common ports and their purposes")
+print ("Port 21: FTP\nPort 80: HTTP traffic \nPort 443: SSL/HTTPS\n")
+print ("Port scanning attacks are like burglars searching for an open window or door to a house. Would you like to see$
+
+RouterIP = cmdline("ipconfig getoption en0 router")
+print cmdline("nmap -sP "+RouterIP)
+print cmdline("arp -a")
+
