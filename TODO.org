@@ -1,0 +1,14 @@
+* Infrastructure
+** Raspberry Pi
++ [ ] connect to WiFi on boot
+** Cloud
++ [ ] registor for Digital Ocean
+
+* Scripts
++ [ ] basic script to dump data about local network clients
+
+* Research
+** Network Monitoring & Pen Testing
++ [ ] nmap
++ [ ] aircrack
++ [ ] cowpatty
