@@ -1,6 +1,7 @@
 * Infrastructure
 ** Raspberry Pi
 + [ ] connect to WiFi on boot
++ [ ] Repackageable VM
 ** Cloud
 + [ ] registor for Digital Ocean
 
@@ -9,6 +10,6 @@
 
 * Research
 ** Network Monitoring & Pen Testing
-+ [ ] nmap
++ [X] nmap
 + [ ] aircrack
 + [ ] cowpatty
