@@ -24,16 +24,7 @@
    - [ ] Make copies of the resulting ISO
    - [ ] Ensure everybody can run the ISO as expected
 
-* Website
-1. [ ] find hosting
-2. [ ] set up basic HTML page
-3. [ ] upload ISO for download
-
-* Critical Package List
-+ nmap
-+ aircrack
-+ cowpatty
-
+* An Example Setup Script
 #+BEGIN_SRC sh
 #!/bin/sh
 LIST="nmap aircrack cowpatty emacs wget"
@@ -47,3 +38,13 @@ tar -xvzf file1.tar.gz
 
 # ETC...
 #+END_SRC
+* Critical Package List
++ nmap
++ aircrack
++ cowpatty
+
+* Website
+1. [ ] find hosting
+2. [ ] set up basic HTML page
+3. [ ] upload ISO for download
+
