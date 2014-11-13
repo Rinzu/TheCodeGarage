@@ -1,15 +1,49 @@
-* Infrastructure
-** Raspberry Pi
-+ [ ] connect to WiFi on boot
-+ [ ] Repackageable VM
-** Cloud
-+ [ ] registor for Digital Ocean
+* Distro Components
++ [ ] Graphics
+  - [ ] Icon/Logo
+  - [ ] Desktop Background(s)
++ [ ] Data Collection Scripts
+  - [ ] IP Address
+  - [ ] Mac Address
+  - [ ] Analysis?
++ [ ] Packages (and dependancies)
 
-* Scripts
-+ [ ] basic script to dump data about local network clients
+* Repackaging Steps
+1. [ ] Install custom scripts on VM
+2. [ ] Install appropriate Packages on VM
+   - This is easier with a bash script that sets up all the appropriate packages
+3. [ ] Install graphics
+   - [ ] Icon/Logo
+   - [ ] Desktop Background
+4. [ ] Clean up the environment
+   - [ ] Delete temporary files
+   - [ ] Remove user-specific data (or make it generic)
+5. [ ] Build the ISO
+   - Helpful tools for this might be: clonezilla, remastersys, etc.
+6. [ ] Testing
+   - [ ] Make copies of the resulting ISO
+   - [ ] Ensure everybody can run the ISO as expected
 
-* Research
-** Network Monitoring & Pen Testing
-+ [X] nmap
-+ [ ] aircrack
-+ [ ] cowpatty
+* Website
+1. [ ] find hosting
+2. [ ] set up basic HTML page
+3. [ ] upload ISO for download
+
+* Critical Package List
++ nmap
++ aircrack
++ cowpatty
+
+#+BEGIN_SRC sh
+#!/bin/sh
+LIST="nmap aircrack cowpatty emacs wget"
+
+# install packages using Debian's 'apt' package manager
+apt-get install $LIST
+
+# download and unpack some files (.tar.gz is a gzipped tar archive)
+wget http://example.com/file1.tar.gz
+tar -xvzf file1.tar.gz
+
+# ETC...
+#+END_SRC
